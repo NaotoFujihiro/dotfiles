@@ -1,0 +1,20 @@
+tap "gcenx/wine"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+brew "git"
+brew "python@3.9"
+brew "tree"
+brew "coreutils"
+
+cask "clipy"
+# cask "google-chrome"
+# cask "visual-studio-code"
+# cask "wine-crossover"
+# cask "wireshark"
+
+# mas "Amphetamine", id: 937984704
+# mas 'Kindle', id: 405399194
+# mas "Slack", id: 803453959
+# mas "The Unarchiver", id: 425424353

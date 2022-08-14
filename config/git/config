@@ -1,0 +1,29 @@
+[core]
+    autocrlf = false
+    ignoreCase = false
+    filemode = false
+
+[init]
+    defaultBranch = main
+
+[status]
+    showUntrackedFiles = all
+
+[commit]
+    verbose = true
+
+[merge]
+    ff = false
+    conflictStyle = diff3
+
+[fetch]
+    prune = true
+
+[pull]
+    ff = only
+
+[push]
+    default = simple
+
+[include]
+    path = conf.d/user.conf

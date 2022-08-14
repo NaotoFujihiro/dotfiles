@@ -1,0 +1,23 @@
+### Aliases ###
+alias ls='ls -al'
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+### autoloads ###
+autoload -Uz cdr
+autoload -Uz chpwd_recent_dirs
+autoload -Uz _zinit
+zpcompinit
+
+### navi ###
+__navi_atload() {
+    export NAVI_CONFIG="$XDG_CONFIG_HOME/navi/config.yaml"
+}
+
+zinit wait lucid light-mode as'program' from'gh-r' for \
+    atload'__navi_atload' \
+    @'denisidoro/navi'
+
+

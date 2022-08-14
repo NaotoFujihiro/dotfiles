@@ -39,6 +39,11 @@ setopt MAGIC_EQUAL_SUBST
 setopt PRINT_EIGHT_BIT
 setopt NO_FLOW_CONTROL
 
+zshaddhistory() {
+    local line="${1%%$'\n'}"
+    [[ ! "$line" =~ "^(cd|history|lazygit|ls|rm|rmdir|trash)($| )" ]]
+}
+
 ### plugins ###
 zinit wait lucid null for \
     atinit'source "$ZDOTDIR/.zshrc.lazy"' \

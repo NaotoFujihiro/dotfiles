@@ -10,5 +10,3 @@ export XDG_CACHE_HOME="$HOME/.cache"
 ### zsh ###
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
-### Terminal ###
-export PS1="%n %F{magenta}%1~%f %F{cyan}%#%f "

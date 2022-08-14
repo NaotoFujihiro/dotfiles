@@ -44,6 +44,9 @@ zshaddhistory() {
     [[ ! "$line" =~ "^(cd|history|lazygit|ls|rm|rmdir|trash)($| )" ]]
 }
 
+### Terminal ###
+export PS1="%F{magenta}%n%f %F{cyan}%1~%f %# "
+
 ### plugins ###
 zinit wait lucid null for \
     atinit'source "$ZDOTDIR/.zshrc.lazy"' \
